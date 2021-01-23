@@ -20,15 +20,15 @@
 			  		<div class="form-row">
 				    	<div class="col">
 				    		<label>Name:</label>
-				      		<input type="text" class="form-control" id="" placeholder="Enter name" name="referance_contact_name">
+				      		<input type="text" class="form-control" id="" placeholder="Enter name" name="referance_contact_name" value="@if(old('referance_contact_name')!=''){{old('referance_contact_name')}}@elseif(isset($jobapp->referance_contact_name)){{$jobapp->referance_contact_name}}@else{{old('referance_contact_name')}}@endif">
 				    	</div>
 				    	<div class="col">
 				    		<label>Contact Number:</label>
-				      		<input type="text" class="form-control" id="" placeholder="Enter contact number" name="referance_contact_number">
+				      		<input type="text" class="form-control" id="" placeholder="Enter contact number" name="referance_contact_number" value="@if(old('referance_contact_number')!=''){{old('referance_contact_number')}}@elseif(isset($jobapp->referance_contact_number)){{$jobapp->referance_contact_number}}@else{{old('referance_contact_number')}}@endif">
 				    	</div>
 				    	<div class="col">
 				    		<label>Relation:</label>
-				      		<input type="text" class="form-control" id="" placeholder="Enter relation" name="referance_contact_relation">
+				      		<input type="text" class="form-control" id="" placeholder="Enter relation" name="referance_contact_relation" value="@if(old('referance_contact_relation')!=''){{old('referance_contact_relation')}}@elseif(isset($jobapp->referance_contact_relation)){{$jobapp->referance_contact_relation}}@else{{old('referance_contact_relation')}}@endif">
 				    	</div>
 				  	</div>
 		    </div> 

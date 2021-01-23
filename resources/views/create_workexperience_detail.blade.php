@@ -20,19 +20,19 @@
 			  		<div class="form-row">
 				    	<div class="col">
 				    		<label>Company Name:</label>
-				      		<input type="text" class="form-control" id="" placeholder="Enter company name" name="workex_company_name">
+				      		<input type="text" class="form-control" id="" placeholder="Enter company name" name="workex_company_name" value="@if(old('workex_company_name')!=''){{old('workex_company_name')}}@elseif(isset($jobapp->workex_company_name)){{$jobapp->workex_company_name}}@else{{old('workex_company_name')}}@endif">
 				    	</div>
 					    <div class="col">
 					    	<label>Designation:</label>
-					      	<input type="text" class="form-control" id="" placeholder="Enter designation" name="workex_designation">
+					      	<input type="text" class="form-control" id="" placeholder="Enter designation" name="workex_designation" value="@if(old('workex_designation')!=''){{old('workex_designation')}}@elseif(isset($jobapp->workex_designation)){{$jobapp->workex_designation}}@else{{old('workex_designation')}}@endif">
 					    </div>
 					    <div class="col">
 					    	<label>From:</label>
-					      	<input type="date" class="form-control" id="" name="from_date">
+					      	<input type="date" class="form-control" id="" name="from_date" value="@if(old('from_date')!=''){{old('from_date')}}@elseif(isset($jobapp->from_date)){{$jobapp->from_date}}@else{{old('from_date')}}@endif">
 					    </div>
 					    <div class="col">
 					    	<label>To:</label>
-					      	<input type="date" class="form-control" id="" name="to_date">
+					      	<input type="date" class="form-control" id="" name="to_date" value="@if(old('to_date')!=''){{old('to_date')}}@elseif(isset($jobapp->to_date)){{$jobapp->to_date}}@else{{old('to_date')}}@endif">
 					    </div>
 				  	</div>
 		    </div> 

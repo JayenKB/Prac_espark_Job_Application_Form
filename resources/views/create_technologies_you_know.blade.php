@@ -19,58 +19,58 @@
 	            @endif
 		  		<div class="form-check">
 				  <label class="form-check-label">
-				    <input type="checkbox" class="form-check-input" name="technologies_you_know" value="php">PHP
+				    <input type="checkbox" class="form-check-input" name="technologies_you_know" value="php" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "php" ? 'checked' : ''}}@endif>PHP
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="technologies_you_know" value="beginer">Beginer
+				    <input type="radio" class="form-check-input" name="technologies_you_know" value="beginer" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "beginer" ? 'checked' : ''}}@endif>Beginer
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="technologies_you_know" value="mideator">Mideator
+				    <input type="radio" class="form-check-input" name="technologies_you_know" value="mideator" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "mideator" ? 'checked' : ''}}@endif>Mideator
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="technologies_you_know" value="expert">Expert
+				    <input type="radio" class="form-check-input" name="technologies_you_know" value="expert" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "expert" ? 'checked' : ''}}@endif>Expert
 				  </label>
 				</div>
 				<div class="form-check">
 				  <label class="form-check-label">
-				    <input type="checkbox" class="form-check-input" name="mysql_technologies_you_know" value="mysql">MySQL
+				    <input type="checkbox" class="form-check-input" name="mysql_technologies_you_know" value="mysql" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "mysql" ? 'checked' : ''}}@endif>MySQL
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="mysql_beginer">Beginer
+				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="beginer" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "beginer" ? 'checked' : ''}}@endif>Beginer
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="mysql_mideator">Mideator
+				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="mideator" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "mideator" ? 'checked' : ''}}@endif>Mideator
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="mysql_expert">Expert
+				    <input type="radio" class="form-check-input" name="mysql_technologies_you_know" value="expert" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "expert" ? 'checked' : ''}}@endif>Expert
 				  </label>
 				</div>
 				<div class="form-check">
 				  <label class="form-check-label">
-				    <input type="checkbox" class="form-check-input" name="laravel_technologies_you_know" value="laravel">Laravel
+				    <input type="checkbox" class="form-check-input" name="laravel_technologies_you_know" value="laravel" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "laravel" ? 'checked' : ''}}@endif>Laravel
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="laravel_beginer">Beginer
+				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="beginer" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "beginer" ? 'checked' : ''}}@endif>Beginer
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="laravel_mideator">Mideator
+				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="mideator" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "mideator" ? 'checked' : ''}}@endif>Mideator
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="laravel_expert">Expert
+				    <input type="radio" class="form-check-input" name="laravel_technologies_you_know" value="expert" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "expert" ? 'checked' : ''}}@endif>Expert
 				  </label>
 				</div>
 				<div class="form-check">
 				  <label class="form-check-label">
-				    <input type="checkbox" class="form-check-input" name="oracle_technologies_you_know" value="oracle">Oracle
+				    <input type="checkbox" class="form-check-input" name="oracle_technologies_you_know" value="oracle" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "oracle" ? 'checked' : ''}}@endif>Oracle
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="oracle_beginer">Beginer
+				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="beginer" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "beginer" ? 'checked' : ''}}@endif>Beginer
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="oracle_mideator">Mideator
+				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="mideator" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "mideator" ? 'checked' : ''}}@endif>Mideator
 				  </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				  <label class="form-check-label">
-				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="oracle_expert">Expert
+				    <input type="radio" class="form-check-input" name="oracle_technologies_you_know" value="expert" @if(isset($jobapp->technologies_you_know)){{$jobapp->technologies_you_know == "expert" ? 'checked' : ''}}@endif>Expert
 				  </label>
 				</div>
 		    </div> 
