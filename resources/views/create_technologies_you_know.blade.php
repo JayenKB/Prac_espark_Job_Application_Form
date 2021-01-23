@@ -5,6 +5,7 @@
   <h2>Technologies you know</h2>
   	<div class="card">
     	<form action="{{route('post_step_five_technologies_you_know')}}" method="post">
+    		<input type="hidden" name="id" value="@if(isset($jobapp->id)){{$jobapp->id}}@endif">
     		<div class="card-header">Technologies you know</div>
 		    <div class="card-body">
 	    		@csrf

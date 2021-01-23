@@ -284,8 +284,12 @@ class JobAppController extends Controller
 	  
 	        $request->session()->forget('jobapp');
 	        // $request->session()->put('jobapp', $jobapp);
-	  
-	        return redirect()->route('home');
+	  		
+	  		if ($request->id) {
+	  			return redirect()->route('home')->with('success','Job application updated successfully...');
+	  		}else{
+	        	return redirect()->route('home')->with('success','Job application added successfully...');
+	  		}
 	  
     	} catch (Exception $e) {
     		Log::error($e);

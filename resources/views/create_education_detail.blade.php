@@ -5,6 +5,7 @@
   <h2>Education Detail</h2>
   <div class="card">
 	<form action="{{route('post_step_two_create_education_detail')}}" method="post">
+		<input type="hidden" name="id" value="@if(isset($jobapp->id)){{$jobapp->id}}@endif">
 	    <div class="card-header">Education Detail</div>
 	    <div class="card-body">
 	    		@csrf

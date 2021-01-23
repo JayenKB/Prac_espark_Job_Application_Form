@@ -5,6 +5,7 @@
   <h2>Work Experience</h2>
   	<div class="card">
     	<form action="{{route('post_step_three_workexperience_detail')}}" method="post">
+    		<input type="hidden" name="id" value="@if(isset($jobapp->id)){{$jobapp->id}}@endif">
     		<div class="card-header">Work Experience</div>
 		    <div class="card-body">
 		    		@csrf

@@ -5,6 +5,7 @@
   <h2>Preferances</h2>
   	<div class="card">
     	<form action="{{route('post_step_seven_preferances')}}" method="post">
+    		<input type="hidden" name="id" value="@if(isset($jobapp->id)){{$jobapp->id}}@endif">
     		<div class="card-header">Preferances</div>
 		    <div class="card-body">
 	    		@csrf
