@@ -34,6 +34,7 @@
 				  	</div>
 		    </div> 
 		    <div class="card-footer text-right">
+		    	<a href="{{route('step_five_technologies_you_know')}}" class="btn btn-danger">Previous</a>
 		        <button type="submit" class="btn btn-primary">Next</button>
 		    </div>
 	    </form>

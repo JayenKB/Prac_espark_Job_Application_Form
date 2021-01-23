@@ -38,6 +38,7 @@
 				  	</div>
 		    </div> 
 		    <div class="card-footer text-right">
+		    	<a href="{{route('step_two_create_education_detail')}}" class="btn btn-danger">Previous</a>
 		        <button type="submit" class="btn btn-primary">Next</button>
 		    </div>
 	    </form>

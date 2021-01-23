@@ -76,6 +76,7 @@
 				</div>
 		    </div> 
 		    <div class="card-footer text-right">
+		    	<a href="{{route('step_four_language_known')}}" class="btn btn-danger">Previous</a>
 		        <button type="submit" class="btn btn-primary">Next</button>
 		    </div>
 	    </form>

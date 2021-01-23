@@ -88,7 +88,7 @@
 			  	</div>
 	    </div> 
 	    <div class="card-footer text-right">
-	    	<!-- <a href="{{route('step_one_create_basic_detail')}}" class="btn btn-danger">Previous</a> -->
+	    	<a href="{{route('step_one_create_basic_detail')}}" class="btn btn-danger">Previous</a>
 	        <button type="submit" class="btn btn-primary">Next</button>
 	    </div>
 	</form>
