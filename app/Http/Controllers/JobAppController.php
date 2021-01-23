@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\JobApp;
 use Log;
+use Illuminate\Support\Facades\Crypt;
 
 class JobAppController extends Controller
 {
@@ -21,7 +22,8 @@ class JobAppController extends Controller
 	public function view(Request $req,$id)
     {
     	try {
-    		$data['jobapp'] = JobApp::find($id);
+    		$jid = Crypt::decrypt($id);
+    		$data['jobapp'] = JobApp::find($jid);
             return view('view_detail')->with($data);
     	} catch (Exception $e) {
     		Log::error($e);	
@@ -299,6 +301,7 @@ class JobAppController extends Controller
     public function edit($id)
     {	
         try {
+        	
             $data['jobapp'] = JobApp::find($id);
             return view('create_basic_detail')->with($data);
 
@@ -310,7 +313,8 @@ class JobAppController extends Controller
     public function delete($id)
     {
         try {
-            $jobapp = JobApp::find($id);
+        	$jid = Crypt::decrypt($id);
+            $jobapp = JobApp::find($jid);
             $jobapp->delete();
             return back()->with('success','Deleted Successfully!');
         } catch (Exception $e) {

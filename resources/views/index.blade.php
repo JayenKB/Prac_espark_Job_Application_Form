@@ -34,9 +34,9 @@
 	        <td>{{$jdata->first_name}}</td>
 	        <td>{{$jdata->last_name}}</td>
 	        <td>{{$jdata->email}}</td>
-	        <td><a href="{{route('view',$jdata->id)}}" class="btn btn-info">View</a></td>
+	        <td><a href="{{route('view',Crypt::encrypt($jdata->id))}}" class="btn btn-info">View</a></td>
 	        <td><a href="{{route('edit',$jdata->id)}}" class="btn btn-secondary">Update</a></td>
-	        <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('delete',$jdata->id)}}">Delete</a></td>
+	        <td><a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{route('delete',Crypt::encrypt($jdata->id))}}">Delete</a></td>
 	      </tr>
 	      @endforeach
 	    </tbody>
